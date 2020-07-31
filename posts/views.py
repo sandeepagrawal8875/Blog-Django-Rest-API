@@ -31,7 +31,7 @@ class PostViewSets(viewsets.ModelViewSet):
         
         return self.serializer_class
 
-    @action(methods=['POST'], detail=True, url_path='upload-image')
+    @action(methods=['POST'], detail=True, url_path='image')
     def upload_image(self, request, pk=None):
         """upload an image to a recipe"""
         post = self.get_object()

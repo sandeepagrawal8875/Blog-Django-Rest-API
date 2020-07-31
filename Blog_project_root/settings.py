@@ -125,7 +125,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+
+AUTH_USER_MODEL = 'users.User'
+
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+STATICFILE_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media' )
 
 
 # REST_FRAMEWORK = {
@@ -137,5 +147,3 @@ STATIC_URL = '/static/'
 #         'rest_framework.authentication.TokenAuthentication',
 #         ],
 # }
-
-AUTH_USER_MODEL = 'users.User'

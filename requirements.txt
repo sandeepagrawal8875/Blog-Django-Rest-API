@@ -2,6 +2,6 @@ django
 djangorestframework
 Pillow
 coreapi==2.3.3
-pyyaml==5.1.2
+pyyaml==5.4
 django-rest-swagger==2.2.0
 drf-yasg
